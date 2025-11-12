@@ -78,3 +78,4 @@ if __name__ == "__main__":
 # It was inspired by the real-world idea of electrical
 # adapters — connecting incompatible systems without
 # modifying them.
+# ==============================================

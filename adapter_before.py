@@ -59,16 +59,15 @@ if __name__ == "__main__":
     main()
 
 
-# ==============================================
+# -----------------------------
 # Example Output
-# ==============================================
+# -----------------------------
 # --- Before Adapter Example ---
 # Power from European outlet (220V)
 # Power from USA outlet (110V)
 #
 # Manual workaround:
 # Power from European outlet (110V) [manually converted]
-# ==============================================
 
 
 # ==============================================

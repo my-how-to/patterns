@@ -77,9 +77,9 @@ if __name__ == "__main__":
     main()
 
 
-# ==============================================
+# -----------------------------
 # Example Output
-# ==============================================
+# -----------------------------
 #--- Before Factory Method Example ---
 # A delicious chocolate cake!
 # A sweet fruit cake!
@@ -92,7 +92,6 @@ if __name__ == "__main__":
 #
 # Adding a new cake type means finding and changing code everywhere —
 # each module that creates cakes must be updated.
-# ==============================================
 
 
 # ==============================================
