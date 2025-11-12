@@ -34,5 +34,5 @@ Each file is written for educational purposes — simple enough for beginners, y
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/yourusername/python-design-patterns.git
-   cd python-design-patterns
+   git clone https://github.com/my-how-to/patterns.git
+   cd patterns
