@@ -1,46 +1,14 @@
-# Python, Design Patterns — Educational Examples
+# 🎯 Python Design Patterns — Educational Examples
 
-This repository contains a collection of **simplified, commented examples** of classic *Object-Oriented Design Patterns* implemented in Python.
-
----
-
-## Overview
-
-The goal of this repository is to help learners understand **why** design patterns exist,
-and **how** they improve code readability, flexibility, and maintainability.
-
-Each file is self-contained and can be run directly using Python 3.
-
-> **Note:** For simplicity, all files are stored in a single folder.
-> Patterns are grouped by type (**Creational**, **Structural**, **Behavioral**) only in this README for easier navigation.
+This repository contains **simple, well-commented examples** of classic *Object-Oriented Design Patterns* implemented in Python.
+Each pattern demonstrates how developers solved common software design problems —
+first *before* the pattern existed, and then using the *pattern approach*.
 
 ---
 
-## Repository Structure
+## 🚀 How to Run
 
-```
-design_patterns/
-│
-├── factory_before.py
-├── factory_registry.py
-├── factory.py
-├── singleton_before.py
-├── singleton.py
-├── ....
-└── README.md
-```
-
----
-
-## How to Run
-
-1. Clone the repository  
-
-```bash
-git clone https://github.com/my-how-to/patterns.git
-cd patterns
-```
-2. Each file can be executed individually:
+Each file can be executed directly:
 
 ```bash
 python3 factory_method_basic.py
@@ -48,47 +16,37 @@ python3 observer_before.py
 python3 singleton_pattern.py
 ```
 
-All examples include printed **Example Output** in the code itself,
-so you can easily compare expected and actual behavior.
+Each example includes its own **comments**, **output**, and **short history**
+for easy understanding without any additional setup.
 
 ---
 
-## Included Patterns
+## 🧱 Educational Approach
 
-| Category       | Pattern        | Description                                             |
-| -------------- | -------------- | ------------------------------------------------------- |
-| **Creational** | Factory Method | Creates objects without specifying exact classes        |
-|                | Singleton      | Ensures a class has only one instance                   |
-| **Structural** | Adapter        | Bridges incompatible interfaces                         |
-|                | Decorator      | Dynamically adds functionality to objects               |
-| **Behavioral** | Observer       | Enables communication between objects via notifications |
+Every pattern pair follows this format:
 
----
+* **Before Version:** shows the repetitive or rigid code used before the pattern.
+* **Pattern Version:** shows the structured, reusable solution.
+* **Commented Code:** clear, consistent style for all files.
+* **Example Output:** visible directly inside the script.
 
-## Educational Approach
-
-Each pattern follows the same structure:
-
-1. **Before Version** — shows the problem or repetitive code developers faced before the pattern.
-2. **Pattern Version** — demonstrates the structured, reusable solution.
-3. **Comments** — clear explanations in every file.
-4. **Example Output** — real console output for better understanding.
-5. **History** — short background on how and when the pattern appeared.
+> **Note:**
+> All files are stored in a single folder for simplicity.
+> Classification (Creational, Structural, Behavioral) is shown separately
+> in the [Patterns Overview](patterns_overview.md) file.
 
 ---
 
 ## ⚠️ Disclaimer
 
-The code examples in this repository are **simplified educational demonstrations**
-of design patterns. They are intended to explain key concepts clearly and concisely.
-
-These examples **should not be used in production systems**
-without additional error handling, optimization, and security considerations.
+These code examples are **simplified educational demonstrations** meant for learning purposes.
+They are **not production-ready** implementations and should not be used without
+proper error handling, testing, and optimization.
 
 ---
 
-## Author
+## 🧑‍💻 Author
 
-**Alexandru Petrenco.**
+**Alexandru Petrenco**
 Educational repository built with AI assistance from *OpenAI GPT-5*.
-This project is part of a personal study collection on **Object-Oriented Programming** and **Software Design Patterns**.
+Part of a personal study collection on **Object-Oriented Programming** and **Software Design Patterns**.
