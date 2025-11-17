@@ -1,23 +1,18 @@
-"""
-=========================================
-   DECORATORS — BASICS & FUNDAMENTALS
-=========================================
+# =========================================
+#   DECORATORS — BASICS & FUNDAMENTALS
+# =========================================
+# This file is a personal learning/teaching reference.
+# It explains decorators step-by-step with clear examples.
+#
+# CONTENTS:
+#     1. What is a decorator?
+#     2. Minimal decorator (no arguments)
+#     3. How @decorator syntax works
+#     4. Step-by-step execution flow
+#     5. Decorators that accept ANY arguments (*args, **kwargs)
+#     6. Reusable decorator demo
+#     7. Summary
 
-This file is a personal learning/teaching reference.
-It explains decorators step-by-step with clear examples.
-
-CONTENTS:
-    1. What is a decorator?
-    2. Minimal decorator (no arguments)
-    3. How @decorator syntax works
-    4. Step-by-step execution flow
-    5. Decorators that accept ANY arguments (*args, **kwargs)
-    6. Reusable decorator demo
-    7. Summary
-
-Run this file:
-    python decorators_basics.py
-"""
 
 # ============================================================
 # 1. WHAT IS A DECORATOR?
