@@ -26,7 +26,7 @@ Each entry includes a short, one-line description and a link to the correspondin
 | Pattern                                | Description                                                                               |
 | -------------------------------------- | ----------------------------------------------------------------------------------------- |
 | [**adapter.py**](adapter.py)           | Bridges incompatible interfaces so that classes can work together.                        |
-| [**bridge.py**](missing_pattern.md)    | Separates an object’s abstraction from its implementation so they can vary independently. |
+| [**bridge.py**](bridge.md)    | Separates an object’s abstraction from its implementation so they can vary independently. |
 | [**composite.py**](missing_pattern.md) | Composes objects into tree structures to represent part-whole hierarchies.                |
 | [**decorator.py**](decorator.py)       | Dynamically adds or modifies functionality of an object at runtime.                       |
 | [**facade.py**](missing_pattern.md)    | Provides a simplified interface to a larger body of code.                                 |
