@@ -31,7 +31,7 @@ Each entry includes a short, one-line description and a link to the correspondin
 | [**decorator.py**](decorator.py)       | Dynamically adds or modifies functionality of an object at runtime.                       |
 | [**facade.py**](facade.py)    | Provides a simplified interface to a larger body of code.                                 |
 | [**flyweight.py**](flyweight.py) | Reduces memory usage by sharing common data between similar objects.                      |
-| [**proxy.py**](missing_pattern.md)     | Controls access to another object, often adding additional behavior.                      |
+| [**proxy.py**](proxy.py)     | Controls access to another object, often adding additional behavior.                      |
 
 ---
 
