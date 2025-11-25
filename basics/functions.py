@@ -19,8 +19,7 @@
 #   - function stubs (pass, ...)
 #   - docstring examples (PEP-257)
 #
-# Every section includes separators so the output
-# is easy to read when you run the file.
+# Each section prints a separator so the output is clean.
 
 
 # ==========================================
@@ -120,6 +119,13 @@ print(counter)
 
 print("\n--- SECTION 7: *args (multiple positional arguments) ---")
 
+# *args collects all extra positional arguments into a TUPLE.
+# Useful for:
+#   - flexible math helpers
+#   - functions that accept unlimited inputs
+#   - decorators wrapping any function signature
+#   - API helpers, logging, analytics
+
 def total_sum(*numbers):
     return sum(numbers)
 
@@ -132,6 +138,13 @@ print(total_sum(10, 20, 30, 40))
 # ==========================================
 
 print("\n--- SECTION 8: **kwargs (multiple named arguments) ---")
+
+# **kwargs collects all keyword arguments into a DICTIONARY.
+# Useful for:
+#   - configuration functions
+#   - dynamic options
+#   - logging/debug helpers
+#   - decorators
 
 def print_info(**data):
     for key, value in data.items():
@@ -146,9 +159,18 @@ print_info(name="Alex", age=30, country="Moldova")
 
 print("\n--- SECTION 9: Combining *args and **kwargs ---")
 
+# Useful in:
+#   - decorators
+#   - wrapper functions
+#   - API clients
+#   - flexible function signatures
+#
+# Accepts ANY number of positional and named arguments.
+# Perfect for writing generic reusable helpers.
+
 def debug_example(*args, **kwargs):
-    print("Positional:", args)
-    print("Named:", kwargs)
+    print("Positional arguments:", args)
+    print("Keyword arguments:", kwargs)
 
 debug_example(1, 2, 3, mode="test", verbose=True)
 
@@ -159,6 +181,13 @@ debug_example(1, 2, 3, mode="test", verbose=True)
 
 print("\n--- SECTION 10: lambda functions ---")
 
+# Lambdas are tiny anonymous functions.
+# Used for:
+#   - sorting
+#   - inline transformations
+#   - callbacks
+#   - one-liners
+
 double = lambda x: x * 2
 print(double(5))
 
@@ -168,6 +197,14 @@ print(double(5))
 # ==========================================
 
 print("\n--- SECTION 11: Type hints ---")
+
+# Type hints help explain expected argument types.
+# They:
+#   - improve code readability
+#   - help IDE autocomplete
+#   - assist static analyzers (mypy)
+#
+# They DO NOT change runtime behavior.
 
 def multiply(a: int, b: int) -> int:
     return a * b
@@ -181,6 +218,13 @@ print(multiply(3, 4))
 
 print("\n--- SECTION 12: Function aliases ---")
 
+# Functions in Python are FIRST-CLASS OBJECTS.
+# They can be:
+#   - assigned to variables
+#   - passed into functions
+#   - stored in lists/dicts
+#   - returned from functions
+
 def shout(text):
     return text.upper()
 
@@ -193,6 +237,12 @@ print(yell("hello"))
 # ==========================================
 
 print("\n--- SECTION 13: Functions as arguments ---")
+
+# Very common in Python:
+#   - sorted(), map(), filter()
+#   - callbacks
+#   - decorators
+#   - strategy pattern
 
 def apply(func, value):
     return func(value)
@@ -209,6 +259,12 @@ print(apply(square, 5))
 
 print("\n--- SECTION 14: Nested functions ---")
 
+# A function defined inside another function.
+# Used for:
+#   - hiding helper logic
+#   - decorators
+#   - closures
+
 def outer():
     print("Outer start")
 
@@ -221,10 +277,16 @@ outer()
 
 
 # ==========================================
-# 15. CLOSURES (REMEMBER VALUES)
+# 15. CLOSURES
 # ==========================================
 
 print("\n--- SECTION 15: Closures ---")
+
+# A closure remembers variables from the outer scope.
+# Used for:
+#   - decorators
+#   - factories
+#   - making configurable functions
 
 def multiplier(n):
     def inner(x):
@@ -240,6 +302,9 @@ print(double(10))
 # ==========================================
 
 print("\n--- SECTION 16: nonlocal keyword ---")
+
+# nonlocal allows modifying a variable from an ENCLOSING (outer) function.
+# Used when closures need to update state.
 
 def counter_factory():
     count = 0
@@ -262,6 +327,9 @@ print(inc())
 
 print("\n--- SECTION 17: Recursion ---")
 
+# A function that calls itself.
+# Must always have a base case and move toward it.
+
 def factorial(n):
     if n == 1:
         return 1
@@ -275,6 +343,10 @@ print(factorial(5))
 # ==========================================
 
 print("\n--- SECTION 18: Positional-only & keyword-only parameters ---")
+
+# Introduced in Python 3.8+
+# BEFORE "/"  → positional-only
+# AFTER "*"   → keyword-only
 
 def pos_only(a, b, /):
     return a + b
@@ -293,24 +365,24 @@ print(mixed(1, 2, c=3, d=4))
 
 
 # ==========================================
-# 19. FUNCTION STUBS
+# 19. FUNCTION STUBS (PLACEHOLDERS)
 # ==========================================
 
 print("\n--- SECTION 19: Function stubs ---")
 
-# 'pass' = empty function (common during development)
+# pass → empty function body (common during development)
 def todo():
     pass
 
-# '...' = ellipsis, also used as a placeholder
-# Must be inside the function body, NOT in the parameters.
+# ... → ellipsis placeholder (valid no-op)
 def future_feature():
     ...
 
 print("Stub functions executed (no output).")
 
+
 # ==========================================
-# 20. DOCSTRING FORMAT EXAMPLE
+# 20. DOCSTRING FORMAT (PEP-257)
 # ==========================================
 
 print("\n--- SECTION 20: Docstrings (PEP-257) ---")
@@ -324,10 +396,10 @@ def divide(a: float, b: float) -> float:
         b (float): Denominator
 
     Returns:
-        float: The division result
+        float: The result of a / b
 
     Raises:
-        ZeroDivisionError: If b is zero
+        ZeroDivisionError: If b = 0
     """
     return a / b
 
