@@ -40,7 +40,7 @@ Each entry includes a short, one-line description and a link to the correspondin
 | Pattern                                              | Description                                                                               |
 | ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | [**chain_of_responsibility.py**](chain_of_responsibility.py) | Passes requests along a chain of handlers until one processes it.                         |
-| [**command.py**](missing_pattern.md)                 | Encapsulates a request as an object, allowing parameterization and queuing of operations. |
+| [**command.py**](command.py)                 | Encapsulates a request as an object, allowing parameterization and queuing of operations. |
 | [**interpreter.py**](missing_pattern.md)             | Defines a grammar and interpreter for a language or symbolic expressions.                 |
 | [**iterator.py**](missing_pattern.md)                | Provides a way to access elements of a collection without exposing its structure.         |
 | [**mediator.py**](missing_pattern.md)                | Defines an object that coordinates communication between multiple objects.                |
