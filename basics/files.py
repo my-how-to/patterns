@@ -1,5 +1,5 @@
 # ============================================================
-#              FILE HANDLING — PRACTICAL LESSON
+#            LESSON 6 - FILE HANDLING
 # ============================================================
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #

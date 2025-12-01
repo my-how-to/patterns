@@ -1,5 +1,5 @@
 # ===========================================
-#   PYTHON LESSON — LISTS (COLLECTIONS)
+#            LESSON 4 — LISTS (COLLECTIONS)
 # ===========================================
 
 # Collections let you store multiple values in one variable,

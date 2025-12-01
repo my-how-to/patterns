@@ -1,5 +1,5 @@
 # ===========================================
-#   PYTHON LESSON — TUPLES (COLLECTIONS)
+#            LESSON 9.1 - TUPLES (COLLECTIONS)
 # ===========================================
 
 # Tuples look like lists but cannot be changed after creation.

@@ -1,5 +1,5 @@
 # ===========================================
-#   PYTHON LESSON — SETS (COLLECTIONS)
+#            LESSON 9.2 - SETS (COLLECTIONS)
 # ===========================================
 
 # Sets store unique items only (duplicates are removed automatically).

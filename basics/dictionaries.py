@@ -1,5 +1,5 @@
 # ===========================================
-#   PYTHON LESSON — DICTIONARIES (COLLECTIONS)
+#            LESSON 5 — DICTIONARIES (COLLECTIONS)
 # ===========================================
 
 # A dictionary stores key-value pairs.

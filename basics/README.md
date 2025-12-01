@@ -1,21 +1,44 @@
-# Types Overview
+# Python Basics — Course Overview
 
-Quick reference for Python's built-in collection types. Click a type to jump to the local lesson file.
+This repository contains your **Python Basics learning path**, organized into clear lessons with runnable examples. Each lesson builds on the previous one, helping you progress toward Python certification and real‑world programming skills.
 
-| Type | Ordered? | Changeable? | Allows Duplicates? | Example | Quick Definition |
-| --- | --- | --- | --- | --- | --- |
-| [List](lists_in_python.py) | ✅ Yes | ✅ Yes | ✅ Yes | `["a", "b", "c"]` | Flexible sequence for general-purpose data. |
-| [Tuple](tuples_in_python.py) | ✅ Yes | ❌ No | ✅ Yes | `("a", "b", "c")` | Immutable record for fixed data. |
-| [Set](sets_in_python.py) | ❌ No | ✅ Yes | ❌ No | `{"a", "b", "c"}` | Unordered collection of unique items. |
-| [Dictionary](dicts_in_python.py) | ✅ Yes | ✅ Yes | ❌ (keys only) | `{"a": 1, "b": 2}` | Mapping of keys to values. |
+Below is a structured **table of contents** with a short description for every lesson and direct links to each lesson file.
 
 ---
 
-## Extra Tips
+## Contents
 
-- **Choose the right tool:** Tuples for fixed records, lists for sequences you edit often, sets when you only need membership/uniqueness, dictionaries for labeled data.
-- **Conversions are easy:** Use `list()`, `tuple()`, `set()`, and `dict()` to convert between types; this is handy when deduplicating or freezing data.
-- **Immutability matters:** Tuples and frozensets are hashable, so they can act as dict keys or set members.
-- **Memory & performance:** Sets/dicts provide O(1) average lookup; lists preserve order and allow indexing; tuples are slightly smaller/faster when data never changes.
-- **Advanced modules to explore:** `collections` (namedtuple, deque, Counter) and `typing` (type hints like `list[str]`) extend what you can do with these basics.
-- **Comprehensions:** See [comprehensions.py](comprehensions.py) for list/dict/set comprehensions that build these collections in one expressive line.
+| Lesson   | Title                                                   | Description                                          | More                                     |      |
+| -------- | ------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------- | ---- |
+| **1**    | [Variables & Data Types](variables_and_data_types.p.py) | variables, basic types, input/output                 | [read more](types_overview.md)           |      |
+| **2**    | [Conditions & Logic](operators_and_expressions.py)      | if/elif/else, comparisons, boolean logic             | —                                        |      |
+| **3**    | [Loops](loops.py)                                       | for, while, break, continue, nested loops            | —                                        |      |
+| **4**    | [Lists (Collections)](lists.py)                         | indexing, slicing, add/remove, loops, comprehensions | —                                        |      |
+| **5**    | [Dictionaries](dictionaries.py)                         | key/value storage, updates, looping, membership      | —                                        |      |
+| **6**    | [File Handling](files.py)                               | read/write, append, with-statement, CSV              | [read more](files_documentation.md)      |      |
+| **7**    | [Functions](functions.py)                               | parameters, return, scope, reusable code             | —                                        |      |
+| **8.1**  | [Exception Handling](error_handling.py)                 | try/except, specific errors, finally                 | [read more](error_hangling_fererence.md) |      |
+| **8.2**  | [Error Handling (OOP)](error_handling_oop.py)           | exceptions inside classes/methods                    | [read more](error_hangling_fererence.md) |      |
+| **9.1**  | [Tuples](tuples.py)                                     | immutable ordered collections, unpacking             | —                                        |      |
+| **9.2**  | [Sets](sets.py)                                         | unique items, set operations                         | —                                        |      |
+| **10.1** | [Comprehensions](comprehensions.py)                     | list/dict/set comprehensions                         | —                                        |      |
+| **10.2** | [Lambda Functions](lambda.py)                           | anonymous functions, map/filter/sorted               | —                                        |      |
+
+
+## How to Use This Course
+
+* Each lesson file contains **explanations + runnable code examples**.
+* Files are designed to be opened in **VS Code**, **PyCharm**, or run directly via terminal.
+* You can mix reading with doing — every lesson includes short practice tasks.
+
+---
+
+## Learning Goal
+
+By completing all lessons, you will be ready for:
+
+* Python Institute **PCEP** Certification
+* Python Institute **PCAP** Certification
+* Real‑world automation, scripting, QA/testing, or backend basics.
+
+---

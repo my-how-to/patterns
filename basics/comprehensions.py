@@ -1,5 +1,5 @@
 # ===========================================
-#   PYTHON LESSON — COMPREHENSIONS
+#            LESSON 10.1 - COMPREHENSIONS
 # ===========================================
 
 # Comprehensions let you build collections in a single, expressive line.

@@ -1,5 +1,5 @@
 # ==========================================
-#                 FUNCTIONS
+#            LESSON 7 - FUNCTIONS
 # ==========================================
 # This file explains Python functions:
 #   - defining and calling functions
