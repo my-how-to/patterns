@@ -1,5 +1,5 @@
 # ============================================================
-#            LESSON 10.2 — LAMBDA FUNCTIONS
+#            LESSON 11.2 — LAMBDA FUNCTIONS
 # ============================================================
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #

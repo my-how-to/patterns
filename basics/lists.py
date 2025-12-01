@@ -1,6 +1,6 @@
-# ===========================================
-#            LESSON 4 — LISTS (COLLECTIONS)
-# ===========================================
+# ============================================================
+#            LESSON 5 — LISTS (COLLECTIONS)
+# ============================================================
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #
 # Description:

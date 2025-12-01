@@ -1,5 +1,5 @@
 # ============================================================
-#            LESSON 8.2 - ERROR HANDLING — OOP VERSION
+#            LESSON 9.2 - ERROR HANDLING — OOP VERSION
 # ============================================================
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #

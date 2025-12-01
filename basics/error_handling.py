@@ -1,5 +1,5 @@
 # ============================================================
-#            LESSON 8.1 - PYTHON EXCEPTION HANDLING
+#            LESSON 9.1 - PYTHON EXCEPTION HANDLING
 # ============================================================
 # Author: Alexandru Petrenco (with AI assistance from OpenAI GPT-5)
 #
