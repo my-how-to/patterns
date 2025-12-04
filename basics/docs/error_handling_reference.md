@@ -1,6 +1,6 @@
 # PYTHON EXCEPTIONS — QUICK REFERENCE & CHEATSHEET
 
-[BACK](README.md)
+[BACK](../README.md)
 
 Author: Alexandru Petrenco (with AI assistance from GPT-5)
 
@@ -101,4 +101,4 @@ Master these and you'll cover **90%** of real-world and exam cases.
 
 ---
 
-[BACK](README.md)
+[BACK](../README.md)

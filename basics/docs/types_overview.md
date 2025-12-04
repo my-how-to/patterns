@@ -1,6 +1,6 @@
 # Types Overview
 
-[BACK](README.md)
+[BACK](../README.md)
 
 Quick reference for Python's built-in collection types. Click a type to jump to the local lesson file.
 
@@ -22,4 +22,4 @@ Quick reference for Python's built-in collection types. Click a type to jump to 
 - **Advanced modules to explore:** `collections` (namedtuple, deque, Counter) and `typing` (type hints like `list[str]`) extend what you can do with these basics.
 - **Comprehensions:** See [comprehensions.py](comprehensions.py) for list/dict/set comprehensions that build these collections in one expressive line.
 
-[BACK](README.md)
+[BACK](../README.md)
