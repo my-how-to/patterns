@@ -45,8 +45,8 @@ b = 3
 print("Addition:", a + b)
 print("Subtraction:", a - b)
 print("Multiplication:", a * b)
-print("Division:", a / b)            # float division
-print("Floor Division:", a // b)     # removes decimal
+print("Division:", a / b)            # float division, even when division is “even”.
+print("Floor Division:", a // b)     # removes decimal. Discards the fractional part and returns an integer (or float if operands are float).
 print("Modulus:", a % b)             # remainder
 print("Exponent:", a ** b)           # a^b
 

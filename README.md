@@ -8,16 +8,15 @@ A compact personal repository containing everything I learn about Python — cle
 
 ### basics/
 
-* types, loops, functions
-* modules and packages
-* exceptions and error handling
+* core syntax: variables, data types, operators, collections
+* control flow: conditions, loops, functions, files
+* quick-reference docs inside `basics/docs/`
 
-### oop/
+### builtins/
 
-* classes and objects
-* inheritance and composition
-* dunder methods
-* classmethod, staticmethod, property
+* focused lessons on essential functions like `len`, `lambda`, comprehensions
+* explains protocols (`__len__`, iteration) and common pitfalls
+* roadmap for future lessons (`range`, `enumerate`, `zip`, etc.)
 
 ### decorators/
 
@@ -26,23 +25,22 @@ A compact personal repository containing everything I learn about Python — cle
 * decorators with arguments
 * real examples: logging, timing, retry, caching
 
-### design_patterns/
+### exceptions/
 
-* all 23 GoF patterns
-* each pattern in its own file
-* creational, structural, behavioral
+* defensive error handling patterns
+* `try`/`except` structure, custom rules, and anti-patterns
 
-### testing/
+### oop/
 
-* pytest basics
-* fixtures and mocks
-* automation-oriented examples
+* classes and objects
+* inheritance and composition
+* dunder methods
+* classmethod, staticmethod, property
 
-### projects/
+### sequences/
 
-* small scripts
-* automation tools
-* dashboards and experiments
+* deeper dives into list/tuple behavior not covered in basics
+* slicing tricks, negative indexing, thinking in offsets
 
 ---
 

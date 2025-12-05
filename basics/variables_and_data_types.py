@@ -117,6 +117,11 @@ print("\n# -----------------------------")
 print("# 6. TYPE CASTING (CONVERSIONS)")
 print("\n# -----------------------------")
 
+# print(int("3.5")) 
+# int() cannot convert a decimal string. Must use float("3.5") first.
+
+
+
 num_str = "100"
 num_int = int(num_str)
 num_float = float(num_str)
