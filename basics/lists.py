@@ -17,10 +17,9 @@
 #   2. Useful List Functions
 #   3. Nested Lists (Lists Inside Lists)
 #
-# ============================================================
-# 1) Lists — the Most Common Collection
-# ============================================================
-print("\n--- SECTION 1: Lists — the Most Common Collection ---")
+print("\n# -----------------------------")
+print("# 1. Lists — the Most Common Collection")
+print("# -----------------------------\n")
 
 # A list is an ordered, changeable (mutable) collection.
 fruits = ["apple", "banana", "cherry"]
@@ -47,7 +46,7 @@ print(fruits[-1]) # cherry (last item). See more in negative_indices.py
 print(fruits[0:2])   # ['apple', 'banana'] this makes slicing predictable -> 2 items
 print(fruits[:2])    # ['apple', 'banana'] So the second number (2) is NOT included in the result.
 print(fruits[1:])    # ['banana', 'cherry']
-print(fruits[::-1])  # reversed list
+print(fruits[::-1])  # ['cherry', 'banana', 'apple'] (reverses the list) 
 
 # ------------------------------------------------------------
 # Changing Items
@@ -104,17 +103,17 @@ x = [1, 2, 3]
 y = x
 y.append(4)
 print("x after y.append:", x)  # [1, 2, 3, 4] → x and y reference the same list
+print("y after y.append:", y)  # [1, 2, 3, 4]   
 
 # Make a shallow copy with slicing when you want a new list with the same values.
 a = [1, 2, 3]
 b = a[:]
 b.append(4)
-print("a stays the same, b gets the new item:", a, b)
+print("a stays the same, b gets the new item:", a, b)   # a: [1, 2, 3], b: [1, 2, 3, 4]
 
-# ============================================================
-# 2) Useful List Functions
-# ============================================================
-print("\n--- SECTION 2: Useful List Functions ---")
+print("\n# -----------------------------")
+print("# 2. Useful List Functions")
+print("# -----------------------------\n")
 
 numbers = [4, 1, 8, 2, 9]
 print(max(numbers))  # 9
@@ -148,10 +147,9 @@ print(even_numbers) # [8, 2]
 print([1, 2] * 2)   # [1, 2, 1, 2]
 print([1, 2] * 4)   # [1, 2, 1, 2, 1, 2, 1, 2]
 
-# ============================================================
-# 3) Nested Lists (Lists Inside Lists)
-# ============================================================
-print("\n--- SECTION 3: Nested Lists ---")
+print("\n# -----------------------------")
+print("# 3. Nested Lists (Lists Inside Lists)")
+print("# -----------------------------\n")
 
 matrix = [
     [1, 2, 3],

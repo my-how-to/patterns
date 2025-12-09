@@ -13,9 +13,9 @@
 #   2. Tuple Tricks
 #   3. Tuple Concatenation  
 #  
-# ============================================================
-# 1) Tuples — Immutable Sequences
-# ============================================================
+print("\n# -----------------------------")
+print("# 1. Tuples — Immutable Sequences")
+print("# -----------------------------\n")
 
 fruits = ("apple", "banana", "cherry")
 print(fruits[0])  # apple
@@ -38,9 +38,9 @@ for fruit in fruits:
 # * Ideal for fixed datasets (coordinates, weekdays, etc.).
 # * Can serve as dictionary keys or set members.
 
-# ============================================================
-# 2) Tuple Tricks
-# ============================================================
+print("\n# -----------------------------")
+print("# 2. Tuple Tricks")
+print("# -----------------------------\n")
 
 # ------------------------------------------------------------
 # Single-element tuple
@@ -53,11 +53,12 @@ print(type(t))
 # ------------------------------------------------------------
 person = ("Alex", 32, "Moldova")
 name, age, country = person
-print(name, age, country)
+print(name, age, country) # Alex 32 Moldova
+print("See /assignment/multiple_assignment.py for advanced packing/unpacking patterns.")
 
-# ============================================================
-# 3) Tuple Concatenation
-# ============================================================
+print("\n# -----------------------------")
+print("# 3. Tuple Concatenation")
+print("# -----------------------------\n")
 
 # Tuples can be joined using +
 a = (1, 2, 3)

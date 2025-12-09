@@ -77,11 +77,11 @@ print("\n--- SECTION 4: Swapping variables ---")
 
 a = 2
 b = 3
-print("Before swap:", a, b)
+print("Before swap:", a, b) # Output: Before swap: 2 3
 
 # Python creates a tuple (b, a) and unpacks it into (a, b)
 a, b = b, a
-print("After swap:", a, b)
+print("After swap:", a, b) # Output: After swap: 3 2
 
 
 # ============================================================
