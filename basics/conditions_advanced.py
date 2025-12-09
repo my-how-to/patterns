@@ -103,6 +103,11 @@ name = "Alex"
 if name:
     print("Hello", name)
 
+# Double-negation trick: `not not value` reveals boolean truthiness.
+samples = [5, 0, "", "hi", [], [1]]
+for value in samples:
+    print(f"not not {value!r} -> {not not value}")
+
 
 print("\n# -----------------------------")
 print("# 6. SHORTHAND EXPRESSIONS")

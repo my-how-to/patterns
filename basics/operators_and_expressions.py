@@ -132,17 +132,17 @@ print("# 6. OPERATOR PRECEDENCE")
 print("# -----------------------------\n")
 
 # Python evaluates according to rules (PEMDAS):
-# Parentheses, Exponent, Multiplication/Division, Addition/Subtraction
+# Parentheses, Exponent, Multiplication/Division, Addition/Subtraction.
 
 expr1 = 2 + 3 * 4
 expr2 = (2 + 3) * 4
 
-print("Without parentheses:", expr1)
-print("With parentheses:", expr2)
+print("Without parentheses:", expr1)    # Without parentheses: 14
+print("With parentheses:", expr2)       # With parentheses: 20
 
-# Output:
-# Without parentheses: 14
-# With parentheses: 20
+# Exponentiation (`**`) is also special: it is evaluated right-to-left.
+# Example: 2 ** 3 ** 2 is 2 ** (3 ** 2) = 512.
+print("2 ** 3 ** 2 =", 2 ** 3 ** 2)  # Output: 512
 
 
 print("\n# -----------------------------")

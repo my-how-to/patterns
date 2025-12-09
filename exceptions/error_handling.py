@@ -93,6 +93,14 @@ def example_else_finally():
 # File not found.
 # This always runs — cleaning up.
 
+    print("\n# --- ELSE runs only if no exception ---")
+    try:
+        print(10 / 2) # OK
+    except ZeroDivisionError:
+        print("Division error") # not triggered
+    else:
+        print("OK — no exception occurred") # runs because no error
+
 
 # ------------------------------------------------------------
 # 5. RAISING YOUR OWN EXCEPTIONS
@@ -169,6 +177,27 @@ try:
 except Exception as e:
     print(type(e).__name__)  # TypeError
 
+# AttributeError example
+class Empty:
+    pass
+
+try:
+    print(Empty.missing)
+except AttributeError as e:
+    print("AttributeError:", e) # AttributeError: type object 'Empty' has no attribute 'missing'
+
+# Deleting an attribute also triggers AttributeError on access.
+class Test:
+    def __init__(self, x):
+        self.x = x
+
+t = Test(5)
+del t.x # remove attribute
+try:
+    print(t.x)
+except AttributeError as e:
+    print("AttributeError after deletion:", e)
+
 # ------------------------------------------------------------
 # 8. REAL-WORLD EXAMPLES
 # ------------------------------------------------------------
@@ -207,4 +236,3 @@ def example_safe_conversion():
             print(num * 2)
         except ValueError:
             print(f"Skipping invalid value: {val}")
-

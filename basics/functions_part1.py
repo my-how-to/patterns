@@ -63,6 +63,22 @@ def greet_default(name="friend"):
 greet_default()
 greet_default("Michael")
 
+# Beware: default arguments are evaluated once at function definition time.
+def bad_accumulator(values=[]):
+    values.append(1)
+    return values
+# list keeps growing with each call
+print(bad_accumulator(), bad_accumulator())  # [1] [1, 1]
+
+# Fix by using None as default and creating a new list inside.
+def good_accumulator(values=None):
+    if values is None:
+        values = []
+    values.append(1)
+    return values
+# new list each time
+print(good_accumulator(), good_accumulator())  # [1] [1]
+
 
 print("\n# -----------------------------")
 print("# 5. Multiple returns")

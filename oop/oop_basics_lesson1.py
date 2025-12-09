@@ -141,6 +141,13 @@ alex.say_hi()
 
 print("People created so far:", Person.population)
 
+# Attributes can be deleted dynamically, but accessing afterwards raises AttributeError.
+del alex.name
+try:
+    print(alex.name)
+except AttributeError as err:
+    print("Attribute deleted:", err)
+
 print("\n# -----------------------------")
 print("# 7. CLASS WITH DEFAULT VALUES & ENCAPSULATION")
 print("# -----------------------------\n")

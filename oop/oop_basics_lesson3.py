@@ -146,6 +146,16 @@ print("New attribute level:", dyn.level)
 delattr(dyn, "name")
 print("Has name after delete?", hasattr(dyn, "name"))
 
+# Runtime attributes are stored in __dict__
+class CustomAttrs:
+    def __init__(self):
+        self.x = 1
+
+c = CustomAttrs()
+c.y = 2  # add attribute dynamically
+# __dict__ shows all runtime attributes
+print("Runtime attributes stored in __dict__:", c.__dict__) # {'x': 1, 'y': 2}
+
 
 # ===========================================
 # 6. POLYMORPHIC COLLECTIONS

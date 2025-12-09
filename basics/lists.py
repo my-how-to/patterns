@@ -47,6 +47,8 @@ print(fruits[0:2])   # ['apple', 'banana'] this makes slicing predictable -> 2 i
 print(fruits[:2])    # ['apple', 'banana'] So the second number (2) is NOT included in the result.
 print(fruits[1:])    # ['banana', 'cherry']
 print(fruits[::-1])  # ['cherry', 'banana', 'apple'] (reverses the list) 
+# slicing with negative step skips every other from the end
+print(list(range(5))[::-2])  # [4, 2, 0]
 
 # ------------------------------------------------------------
 # Changing Items
@@ -105,6 +107,13 @@ y.append(4)
 print("x after y.append:", x)  # [1, 2, 3, 4] → x and y reference the same list
 print("y after y.append:", y)  # [1, 2, 3, 4]   
 
+# Rebinding creates a new list object, leaving aliases untouched.
+x = [1, 2, 3]
+y = x
+x = x + [4]
+print("y stays referencing the original list:", y)  # [1, 2, 3]
+print("x now points to a new list:", x)             # [1, 2, 3, 4]
+
 # Make a shallow copy with slicing when you want a new list with the same values.
 a = [1, 2, 3]
 b = a[:]
@@ -146,6 +155,25 @@ print(even_numbers) # [8, 2]
 # List repetition duplicates the list content N times.
 print([1, 2] * 2)   # [1, 2, 1, 2]
 print([1, 2] * 4)   # [1, 2, 1, 2, 1, 2, 1, 2]
+
+# Be cautious with nested mutable objects:
+triplicated = [[]] * 3
+print(triplicated, "len:", len(triplicated)) # [[], [], []] len: 3
+# All three references point to the same inner list object.
+# for example, modifying one modifies all:
+triplicated[0].append("wow")
+print(triplicated, "len:", len(triplicated)) # [['wow'], ['wow'], ['wow']]
+
+# To create independent inner lists, use a list comprehension:
+independent = [[] for _ in range(3)]
+print(independent, "len:", len(independent)) # [[], [], []] len: 3
+# Now modifying one does not affect the others:
+independent[0].append("wow")
+print(independent, "len:", len(independent)) # [['wow'], [], []]    
+
+triplicated[0].append("wow")
+print("Appending via one reference touches all:", triplicated)
+
 
 print("\n# -----------------------------")
 print("# 3. Nested Lists (Lists Inside Lists)")

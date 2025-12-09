@@ -19,10 +19,9 @@
 #   3. Looping Through a Dictionary
 #   4. Checking Membership & Length
 #
-# ============================================================
-# 1) Dictionaries — Mapped Data
-# ============================================================
-print("\n--- SECTION 1: Dictionaries — Mapped Data ---")
+print("\n# -----------------------------")
+print("# 1. Dictionaries — Mapped Data")
+print("# -----------------------------\n")
 
 person = {
     "name": "Alex",
@@ -44,10 +43,12 @@ except KeyError as err:
 # dict_obj.get(key) returns None if the key is not found, instead of raising an exception.
 print(person.get("country", "Not specified"))
 
-# ============================================================
-# 2) Adding, Updating, and Removing
-# ============================================================
-print("\n--- SECTION 2: Adding, Updating, Removing ---")
+# default value returned when key is missing
+print({"x": 1}.get("y", 5))  # 5
+
+print("\n# -----------------------------")
+print("# 2. Adding, Updating, Removing")
+print("# -----------------------------\n")
 
 # Assignment creates a new key or overwrites the existing value.
 person["job"] = "QA Engineer"
@@ -58,10 +59,9 @@ person.pop("city")
 del person["age"]
 print(person)
 
-# ============================================================
-# 3) Looping Through a Dictionary
-# ============================================================
-print("\n--- SECTION 3: Looping Through a Dictionary ---")
+print("\n# -----------------------------")
+print("# 3. Looping Through a Dictionary")
+print("# -----------------------------\n")
 
 # Iterating over the dictionary gives keys; .values() and .items() expose more detail.
 for key in person:
@@ -73,10 +73,9 @@ for value in person.values():
 for key, value in person.items():
     print(key, "→", value)  # key/value pairs
 
-# ============================================================
-# 4) Checking Membership & Length
-# ============================================================
-print("\n--- SECTION 4: Membership & Length ---")
+print("\n# -----------------------------")
+print("# 4. Membership & Length")
+print("# -----------------------------\n")
 
 # Use `in` for membership checks, len() for how many pairs exist.
 if "name" in person:

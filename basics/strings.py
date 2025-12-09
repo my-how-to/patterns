@@ -50,22 +50,14 @@ print("# -----------------------------\n")
 
 text = "Hello, world!"
 
-print("First char:", text[0])
-print("Last char:", text[-1])
+print("First char:", text[0])   # First char: H
+print("Last char:", text[-1])   # Last char: !
 
-print("Slice (0:5):", text[0:5])
-print("Slice (:5):", text[:5])
-print("Slice (7:):", text[7:])
+print("Slice (0:5):", text[0:5])    # Slice (0:5): Hello
+print("Slice (:5):", text[:5])      # Slice (:5): Hello
+print("Slice (7:):", text[7:])      # Slice (7:): world!
 
-print("Every second char:", text[::2])
-
-# Output:
-# First char: H
-# Last char: !
-# Slice (0:5): Hello
-# Slice (:5): Hello
-# Slice (7:): world!
-# Every second char: Hlo ol!
+print("Every second char:", text[::2])  # Every second char: Hlo ol!
 
 
 print("\n# -----------------------------")

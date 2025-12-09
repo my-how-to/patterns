@@ -64,6 +64,15 @@ while count > 0:
     count -= 1
 print("Lift off!")
 
+print("\nWhile loop with break example:")
+number = 1
+while True:
+    print("Inside loop:", number)
+    if number == 3:
+        break  # exit once condition is met
+    number += 1
+print(number, "Loop exited via break.") # prints 3 Loop exited via break.
+
 
 print("\n# -----------------------------")
 print("# 4. BREAK AND CONTINUE")
@@ -73,11 +82,12 @@ print("BREAK example:")
 for i in range(10):
     if i == 5:
         break  # exit the loop entirely
-    print(i)
+    print(i) # prints 0 to 4
+print(i, "exited the loop at 5") # prints 5 exited the loop at 5
 
 print("\nCONTINUE example:")
 for i in range(10):
-    if i % 2 == 0:
+    if i % 2 == 0: # even number
         continue  # skip to the next iteration
     print(i)  # prints only odd numbers
 
