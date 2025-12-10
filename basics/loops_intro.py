@@ -99,6 +99,12 @@ for fruit in fruits:
         print(f"Processing {fruit}")
 print("PASS lets you leave a block empty without causing an error.")
 
+# The else block runs only if the loop finishes WITHOUT a break.
+for i in range(3):
+    if i == 1:
+        break
+else:
+    print("OK") # This will NOT print because of the break above.
 
 print("\n# -----------------------------")
 print("# 5. LOOP ELSE CLAUSE")

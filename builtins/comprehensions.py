@@ -37,6 +37,9 @@ print(squares)  # [1, 4, 9, 16, 25]
 even_squares = [n ** 2 for n in numbers if n % 2 == 0]
 print(even_squares)  # [4, 16]
 
+#This list returns all numbers from 0 to 5 that are NOT divisible by 3.
+print([i for i in range(6) if i % 3])  # [1, 2, 4, 5]
+
 # ============================================================
 # 2) Dictionary Comprehensions
 # ============================================================

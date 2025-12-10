@@ -110,9 +110,21 @@ print("y after y.append:", y)  # [1, 2, 3, 4]
 # Rebinding creates a new list object, leaving aliases untouched.
 x = [1, 2, 3]
 y = x
-x = x + [4]
+x = x + [4]  # new list produced; x now points to a different object
 print("y stays referencing the original list:", y)  # [1, 2, 3]
 print("x now points to a new list:", x)             # [1, 2, 3, 4]
+
+# In-place operators mutate the existing list, so aliases see the change.
+x = [1, 2, 3]
+y = x
+x += [4]  # extends the original object instead of rebinding
+print("y also sees the appended value due to shared reference:", y)     # [1, 2, 3, 4]
+print("x references the same list object as y:", x is y)                # True
+
+# NOTE: For numbers, x = x + 1 and x += 1 are equivalent because ints are immutable.
+# With lists, x += [value] performs in-place modification (like list.extend),
+# and x = x + [value] builds a brand-new list, which is why aliases behave differently.
+
 
 # Make a shallow copy with slicing when you want a new list with the same values.
 a = [1, 2, 3]

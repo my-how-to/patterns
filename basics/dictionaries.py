@@ -41,10 +41,12 @@ except KeyError as err:
 
 # The dictionary's get() method lets you supply a fallback instead of crashing on missing keys.
 # dict_obj.get(key) returns None if the key is not found, instead of raising an exception.
-print(person.get("country", "Not specified"))
+print(person.get("country", "Not specified"))       # Not specified
 
 # default value returned when key is missing
-print({"x": 1}.get("y", 5))  # 5
+print({"x": 1}.get("y", 5))     # 5
+# No default value provided, None is returned when key is missing
+print({"x": 1}.get("y"))        # None
 
 print("\n# -----------------------------")
 print("# 2. Adding, Updating, Removing")
